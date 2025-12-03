@@ -1,0 +1,41 @@
+@reference "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FEMC — PERFECT CONTRAST & READABILITY (works 100%) */
+.dark {
+  @apply bg-black text-white;
+}
+
+/* Day cards — pure white in light, pure black in dark */
+.bg-gray-50,
+.bg-white {
+  @apply bg-white dark:bg-black;
+}
+
+/* Maximum text contrast */
+.text-gray-900 {
+  @apply text-black dark:text-white;
+}
+
+/* Bible references — GLOWING CYAN */
+.dark .text-cyan-400 {
+  @apply text-cyan-300;
+}
+
+/* Version selector — crisp in dark mode */
+.dark select {
+  select {
+    @apply bg-gray-900/95 text-white border-gray-600;
+  }
+  input {
+    @apply bg-white text-black border-red-700;
+  }
+}
+
+/* Covenant Renewal — BLAZING RED */
+.renewal-day {
+  @apply bg-red-800 text-white border-4 border-red-500 shadow-2xl ring-8 ring-red-500/40;
+}
