@@ -1,19 +1,25 @@
 // src/app/dashboard/page.tsx
-export default function DashboardPage() {
+import type { NextPage } from 'next';
+
+const DashboardPage: NextPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-900 to-black text-white p-8">
-      <h1 className="text-5xl font-black text-amber-400 mb-6">
-        FEMC Dashboard
-      </h1>
-      <p className="text-2xl">Welcome to your Bible in a Year journey!</p>
-      <div className="mt-12">
+    <div className="min-h-screen bg-gradient-to-b from-red-900 to-black text-white flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-6xl md:text-8xl font-black text-amber-400 mb-8">
+          FEMC DASHBOARD
+        </h1>
+        <p className="text-2xl md:text-4xl mb-12">
+          Welcome to your Bible in a Year journey
+        </p>
         <a
-          href="/courses/bible-2026/week/1"
-          className="inline-block px-12 py-6 bg-amber-600 hover:bg-amber-500 rounded-full font-bold text-xl"
+          href="/"
+          className="inline-block px-16 py-8 bg-amber-600 hover:bg-amber-500 rounded-full font-black text-2xl shadow-2xl"
         >
-          Begin Reading Now
+          Go to Home
         </a>
       </div>
     </div>
   );
-}
+};
+
+export default DashboardPage;
