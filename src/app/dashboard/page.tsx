@@ -1,11 +1,9 @@
-<div className="flex justify-between items-center mb-10">
-  <h1 className="text-4xl font-bold">
-    Welcome back, {user?.firstName || 'there'}!
-  </h1>
-  <div className="flex gap-4">
-    <Link href="/courses" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700">
-      Browse Bible Courses
-    </Link>
-    <UserDashboard />
-  </div>
-</div>
+// src/app/dashboard/page.tsx
+export default function DashboardPage() {
+  return (
+    <div className="p-8">
+      <h1 className="text-4xl font-black text-amber-400">FEMC Dashboard</h1>
+      <p className="mt-4 text-xl">Welcome to your Bible in a Year journey!</p>
+    </div>
+  );
+}

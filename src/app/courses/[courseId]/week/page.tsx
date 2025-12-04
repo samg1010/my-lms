@@ -2,6 +2,7 @@
 import { createServerSupabase } from '@/lib/supabase';
 import { notFound } from 'next/navigation';
 
+export default function PageName() { ... }
 export default async function LessonPage({
   params,
 }: {

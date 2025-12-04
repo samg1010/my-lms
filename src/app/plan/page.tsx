@@ -7,6 +7,7 @@ import { readingPlan } from "@/data/readingPlan";
 import Quadrilateral from "@/components/Quadrilateral";
 import DarkModeToggle from "@/components/DarkModeToggle";
 
+export default function PageName() { ... }
 export default function PlanPage() {
   return (
     <BibleVersionProvider>
