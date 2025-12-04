@@ -223,11 +223,6 @@ export default async function BibleWeekPage({
       <article className="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl p-8 md:p-16">
         <GraceJourneyRing currentWeek={weekNum} />
 
-        {/* Quadrilateral on special weeks */}
-        {[4, 5, 12, 26, 38, 52].includes(weekNum) && (
-          <Quadrilateral courseId={courseId} />
-        )}
-
         {/* Discussion questions on most special weeks */}
         {[4, 5, 12, 26, 38].includes(weekNum) && <DiscussionQuestions />}
 
